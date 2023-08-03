@@ -5,9 +5,11 @@ from gvm.errors import GvmError
 
 def main():
     try:
-        # Establish the connection to the GVM server using UNIX socket
-        socket_path = '/run/gvmd/gvmd.sock'  # Replace with the actual path of your gvmd.sock file
-        connection = UnixSocketConnection(socket_path)
+        # Specify the path to the GVM socket file
+        socket_path = '/path/to/your/gvmd.sock'  # Replace with the actual path of your gvmd.sock file
+
+        # Create a UnixSocketConnection object using the socket file path
+        connection = UnixSocketConnection.from_socket_file(socket_path)
 
         # Connect to the GVM server and authenticate
         with Gmp(connection, transform=EtreeTransform()) as gmp:
