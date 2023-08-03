@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://15.207.247.136:9392/login -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="icon" href="https://15.207.247.136:9392/img/favicon.png" type="image/png">
+    <title>Greenbone Security Assistant</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <script type="text/javascript" src="https://15.207.247.136:9392/config.js"></script>
+    <script defer="defer" src="https://15.207.247.136:9392/static/js/main.64d5e089.js"></script>
+    <link href="https://15.207.247.136:9392/static/css/main.d6631c26.css" rel="stylesheet">
+    <style data-styled="" data-styled-version="4.4.1"></style>
+    <style data-styled="active" data-styled-version="5.3.6"></style>
+    <style data-jss="" data-meta="MuiInputBase">
+        @-webkit-keyframes mui-auto-fill {}
+
+        @-webkit-keyframes mui-auto-fill-cancel {}
+
+        .MuiInputBase-root {
+            color: rgba(0, 0, 0, 0.87);
+            cursor: text;
+            display: inline-flex;
+            position: relative;
+            font-size: 1rem;
+            box-sizing: border-box;
+            align-items: center;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-weight: 400;
+            line-height: 1.1876em;
+            letter-spacing: 0.00938em;
+        }
+
+        .MuiInputBase-root.Mui-disabled {
+            color: rgba(0, 0, 0, 0.38);
+            cursor: default;
+        }
+
+        .MuiInputBase-multiline {
+            padding: 6px 0 7px;
+        }
+
+        .MuiInputBase-multiline.MuiInputBase-marginDense {
+            padding-top: 3px;
+        }
+
+        .MuiInputBase-fullWidth {
+            width: 100%;
+        }
+
+        .MuiInputBase-input {
+            font: inherit;
+            color: currentColor;
+            width: 100%;
+            border: 0;
+            height: 1.1876em;
+            margin: 0;
+            display: block;
+            padding: 6px 0 7px;
+            min-width: 0;
+            background: none;
+            box-sizing: content-box;
+            animation-name: mui-auto-fill-cancel;
+            letter-spacing: inherit;
+            animation-duration: 10ms;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .MuiInputBase-input::-webkit-input-placeholder {
+            color: currentColor;
+            opacity: 0.42;
+            transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        }
+
+        .MuiInputBase-input::-moz-placeholder {
+            color: currentColor;
+            opacity: 0.42;
+            transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        }
+
+        .MuiInputBase-input:-ms-input-placeholder {
+            color: currentColor;
+            opacity: 0.42;
+            transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        }
+
+        .MuiInputBase-input::-ms-input-placeholder {
+            color: currentColor;
+            opacity: 0.42;
+            transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+        }
+
+        .MuiInputBase-input:focus {
+            outline: 0;
+        }
+
+        .MuiInputBase-input:invalid {
+            box-shadow: none;
+        }
+
+        .MuiInputBase-input::-webkit-search-decoration {
+            -webkit-appearance: none;
+        }
+
+        .MuiInputBase-input.Mui-disabled {
+            opacity: 1;
+        }
+
+        .MuiInputBase-input:-webkit-autofill {
+            animation-name: mui-auto-fill;
+            animation-duration: 5000s;
+        }
+
+        label[data-shrink=false]+.MuiInputBase-formControl .MuiInputBase-input::-webkit-input-placeholder {
+            opacity: 0 !important;
+        }
+
+        label[data-shrink=false]+.MuiInputBase-formControl .MuiInputBase-input::-moz-placeholder {
+            opacity: 0 !important;
+        }
+
+        label[data-shrink=false]+.MuiInputBase-formControl .MuiInputBase-input:-ms-input-placeholder {
+            opacity: 0 !important;
+        }
+
+        label[data-shrink=false]+.MuiInputBase-formControl .MuiInputBase-input::-ms-input-placeholder {
+            opacity: 0 !important;
+        }
+
+        label[data-shrink=false]+.MuiInputBase-formControl .MuiInputBase-input:focus::-webkit-input-placeholder {
+            opacity: 0.42;
+        }
+
+        label[data-shrink=false]+.MuiInputBase-formControl .MuiInputBase-input:focus::-moz-placeholder {
+            opacity: 0.42;
+        }
+
+        label[data-shrink=false]+.MuiInputBase-formControl .MuiInputBase-input:focus:-ms-input-placeholder {
+            opacity: 0.42;
+        }
+
+        label[data-shrink=false]+.MuiInputBase-formControl .MuiInputBase-input:focus::-ms-input-placeholder {
+            opacity: 0.42;
+        }
+
+        .MuiInputBase-inputMarginDense {
+            padding-top: 3px;
+        }
+
+        .MuiInputBase-inputMultiline {
+            height: auto;
+            resize: none;
+            padding: 0;
+        }
+
+        .MuiInputBase-inputTypeSearch {
+            -moz-appearance: textfield;
+            -webkit-appearance: textfield;
+        }
+    </style>
+    <style data-jss="" data-meta="MuiFormControl">
+        .MuiFormControl-root {
+            border: 0;
+            margin: 0;
+            display: inline-flex;
+            padding: 0;
+            position: relative;
+            min-width: 0;
+            flex-direction: column;
+            vertical-align: top;
+        }
+
+        .MuiFormControl-marginNormal {
+            margin-top: 16px;
+            margin-bottom: 8px;
+        }
+
+        .MuiFormControl-marginDense {
+            margin-top: 8px;
+            margin-bottom: 4px;
+        }
+
+        .MuiFormControl-fullWidth {
+            width: 100%;
+        }
+    </style>
+    <style data-jss="" data-meta="MuiFormLabel">
+        .MuiFormLabel-root {
+            color: rgba(0, 0, 0, 0.54);
+            padding: 0;
+            font-size: 1rem;
+            font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+            font-weight: 400;
+            line-height: 1;
+            letter-spacing: 0.00938em;
+        }
+
+        .MuiFormLabel-root.Mui-focused {
+            color: #3f51b5;
+        }
+
+        .MuiFormLabel-root.Mui-disabled {
+            color: rgba(0, 0, 0, 0.38);
+        }
+
+        .MuiFormLabel-root.Mui-error {
+            color: #f44336;
+        }
+
+        .MuiFormLabel-colorSecondary.Mui-focused {
+            color: #f50057;
+        }
+
+        .MuiFormLabel-asterisk.Mui-error {
+            color: #f44336;
+        }
+    </style>
+    <style data-jss="" data-meta="MuiInput">
+        .MuiInput-root {
+            position: relative;
+        }
+
+        label+.MuiInput-formControl {
+            margin-top: 16px;
+        }
+
+        .MuiInput-colorSecondary.MuiInput-underline:after {
+            border-bottom-color: #f50057;
+        }
+
+        .MuiInput-underline:after {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: "";
+            position: absolute;
+            transform: scaleX(0);
+            transition: transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+            border-bottom: 2px solid #3f51b5;
+            pointer-events: none;
+        }
+
+        .MuiInput-underline.Mui-focused:after {
+            transform: scaleX(1);
+        }
+
+        .MuiInput-underline.Mui-error:after {
+            transform: scaleX(1);
+            border-bottom-color: #f44336;
+        }
+
+        .MuiInput-underline:before {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            content: "\00a0";
+            position: absolute;
+            transition: border-bottom-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+            pointer-events: none;
+        }
+
+        .MuiInput-underline:hover:not(.Mui-disabled):before {
+            border-bottom: 2px solid rgba(0, 0, 0, 0.87);
+        }
+
+        .MuiInput-underline.Mui-disabled:before {
+            border-bottom-style: dotted;
+        }
+
+        @media (hover: none) {
+            .MuiInput-underline:hover:not(.Mui-disabled):before {
+                border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+            }
+        }
+    </style>
+    <style data-jss="" data-meta="MuiInputLabel">
+        .MuiInputLabel-root {
+            display: block;
+            transform-origin: top left;
+        }
+
+        .MuiInputLabel-formControl {
+            top: 0;
+            left: 0;
+            position: absolute;
+            transform: translate(0, 24px) scale(1);
+        }
+
+        .MuiInputLabel-marginDense {
+            transform: translate(0, 21px) scale(1);
+        }
+
+        .MuiInputLabel-shrink {
+            transform: translate(0, 1.5px) scale(0.75);
+            transform-origin: top left;
+        }
+
+        .MuiInputLabel-animated {
+            transition: color 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms, transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms;
+        }
+
+        .MuiInputLabel-filled {
+            z-index: 1;
+            transform: translate(12px, 20px) scale(1);
+            pointer-events: none;
+        }
+
+        .MuiInputLabel-filled.MuiInputLabel-marginDense {
+            transform: translate(12px, 17px) scale(1);
+        }
+
+        .MuiInputLabel-filled.MuiInputLabel-shrink {
+            transform: translate(12px, 10px) scale(0.75);
+        }
+
+        .MuiInputLabel-filled.MuiInputLabel-shrink.MuiInputLabel-marginDense {
+            transform: translate(12px, 7px) scale(0.75);
+        }
+
+        .MuiInputLabel-outlined {
+            z-index: 1;
+            transform: translate(14px, 20px) scale(1);
+            pointer-events: none;
+        }
+
+        .MuiInputLabel-outlined.MuiInputLabel-marginDense {
+            transform: translate(14px, 12px) scale(1);
+        }
+
+        .MuiInputLabel-outlined.MuiInputLabel-shrink {
+            transform: translate(14px, -6px) scale(0.75);
+        }
+    </style>
+    <style data-jss="" data-meta="MuiTextField">
+
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div class="sc-bdVaJa sc-ugnQR HBCaY"><img class="sc-eIHaNI kbTgzR" alt=""
+                src="https://15.207.247.136:9392/img/login-top.svg"><img class="sc-eTpRJs eBipjG" alt=""
+                src="https://15.207.247.136:9392/img/login-bottom.svg">
+            <div class="sc-bdVaJa sc-gPzReC dTyJba">
+                <div class="sc-bdVaJa sc-htpNat ilGGzu">
+                    <div margin="10px" class="sc-bdVaJa sc-bwzfXH itegSq">
+                        <div class="sc-bdVaJa jyAQgG"><img class="sc-kQsIoO cKeYVO" alt="Greenbone AG"
+                                src="https://15.207.247.136:9392/img/greenbonehorizontal.png"></div>
+                        <div class="sc-bdVaJa sUcSo"></div>
+                        <div class="sc-bdVaJa jyFdNE"></div>
+                        <div class="sc-bdVaJa sc-hjRWVT eAzWTB">
+                            <h1 class="sc-kXeGPI gSanBK">Sign in to your account</h1>
+                            <div class="MuiFormControl-root sc-jSUZER bxwpbQ">
+                                <div class="MuiFormControl-root MuiTextField-root sc-gKPRtg ekMaEj MuiFormControl-marginNormal"
+                                    grow="1" tabindex="1"><label
+                                        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+                                        data-shrink="false"
+                                        style="font-family: DroidSans, Arial, sans-serif;">Username</label>
+                                    <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+                                        style="font-family: DroidSans, Arial, sans-serif;"><input aria-invalid="false"
+                                            autocomplete="username" name="username" type="text"
+                                            class="MuiInputBase-input MuiInput-input" value=""></div>
+                                </div>
+                            </div>
+                            <div class="MuiFormControl-root sc-jSUZER bxwpbQ">
+                                <div class="MuiFormControl-root MuiTextField-root sc-gKPRtg ekMaEj MuiFormControl-marginNormal"
+                                    grow="1"><label
+                                        class="MuiFormLabel-root MuiInputLabel-root MuiInputLabel-formControl MuiInputLabel-animated"
+                                        data-shrink="false"
+                                        style="font-family: DroidSans, Arial, sans-serif;">Password</label>
+                                    <div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl"
+                                        style="font-family: DroidSans, Arial, sans-serif;"><input aria-invalid="false"
+                                            autocomplete="current-password" name="password" type="password"
+                                            class="MuiInputBase-input MuiInput-input" value=""></div>
+                                </div>
+                            </div><button data-testid="login-button" class="sc-dIfARi sc-fHxwqH hQaUUB">Sign In</button>
+                        </div>
+                        <div class="sc-bdVaJa sc-fyjhYU edhguG"><img class="sc-cpmKsF fiVufp"
+                                alt="Greenbone Security Assistant"
+                                src="https://15.207.247.136:9392/img/login-label.svg"></div>
+                    </div>
+                </div>
+            </div>
+            <footer class="sc-hMqMXs jibAWR">Greenbone Security Assistant (GSA) Copyright (C) 2009-2023 by Greenbone
+                AG,&nbsp;<a target="_blank" rel="noopener noreferrer" href="http://www.greenbone.net/"
+                    class="sc-eNQAEJ jwLkeu">www.greenbone.net</a></footer>
+        </div>
+    </div>
+    <div id="portals"></div>
+    <div id="a11y-status-message" role="status" aria-live="polite" aria-relevant="additions text"
+        style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px;">
+    </div>
+</body>
+
+</html>
